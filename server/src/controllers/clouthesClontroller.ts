@@ -9,7 +9,7 @@ class ClouthesController{
     }
 
     public async get (req: Request,res:Response):Promise<void> {  // This gets all the products
-        const clouthes =await pool.query('SELECT * FROM sheet1');
+        const clouthes = await pool.query('SELECT * FROM sheet1');
         res.json(clouthes);
     }
 
